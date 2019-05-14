@@ -94,14 +94,26 @@ Martin Fowler - [Tell Don't Ask](https://martinfowler.com/bliki/TellDontAsk.html
 
 ## Bank kata
 
-http://kata-log.rocks/banking-kata
+Source : [Bank Kata by Sandro Mancuso](https://github.com/sandromancuso/Bank-kata)
 
-https://github.com/arolla/bank-kata
+Your PO gives you as an acceptance test the following scenario:
 
-Write a class Account that offers the following methods void deposit(int) void withdraw(int) String printStatement()
+> Given a client makes a deposit of 1000 on 10-01-2019  
+And a deposit of 2000 on 13-01-2019  
+And a withdrawal of 500 on 14-01-2019  
+When she prints her bank statement  
+Then she would see  
+date       || credit   || debit    || balance  
+14/01/2012 ||          || 500.00   || 2500.00  
+13/01/2012 || 2000.00  ||          || 3000.00  
+10/01/2012 || 1000.00  ||          || 1000.00
 
-An example statement would be:
+The specifications constrain you with this interface (due to business contract between your company and your customers):
 
-Date        Amount  Balance
-24.12.2015   +500      500
-23.8.2016    -100      400
+>	void deposit(String amount); 
+
+>	void withdrawal(String amount);
+
+>	String getStatement();
+
+Implement this product, guided by tests.

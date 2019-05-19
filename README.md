@@ -20,8 +20,6 @@ Source : [9 steps to better software design today, by Jeff Bay](https://www.cs.h
 Try to ensure that each method does exactly one thing – one control structure, or one block of statements, per method. (...)  
 As you work with methods that do exactly one thing, expressed within classes doing exactly one thing, your code begins to change. 
 
-Tip :
-
 > Use the Extract Method feature of your IDE to pull out behaviors until your methods only have one level of indentation
 
 Martin Fowler - [Extract Method](https://refactoring.com/catalog/extractFunction.html)
@@ -29,8 +27,6 @@ Martin Fowler - [Extract Method](https://refactoring.com/catalog/extractFunction
 ### 2. <a id="rule_2">Don’t use the ELSE keyword</a>
 
 > Nearly every programmer has seen a nasty nested conditional that’s impossible to follow, or a case statement that goes on for pages. 
-
-Tips :
 
 > Object-oriented languages give us a powerful tool, polymorphism, for handling complex conditional cases. (...)  
 Early return (...)  
@@ -81,8 +77,6 @@ Two kinds of classes, those that maintain the state of a single instance variabl
 Dramatic reduction in duplication errors (...)  
 Better localization of changes to implement new features (...)
 Getters and setters violate the Open/Closed Principle 
-
-Tips 
 
 Martin Fowler - [Tell Don't Ask](https://martinfowler.com/bliki/TellDontAsk.html)
 

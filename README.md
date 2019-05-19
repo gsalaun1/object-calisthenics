@@ -14,7 +14,7 @@ Source : [9 steps to better software design today, by Jeff Bay](https://www.cs.h
 
 ## 9 rules
 
-1. <a id="rule_1">One level of indentation per method</a>
+### 1. <a id="rule_1">One level of indentation per method</a>
 
 > A giant method lacks cohesiveness. (...)  
 Try to ensure that each method does exactly one thing – one control structure, or one block of statements, per method. (...)  

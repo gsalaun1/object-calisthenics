@@ -86,14 +86,14 @@ Source : [Bank Kata by Sandro Mancuso](https://github.com/sandromancuso/Bank-kat
 
 Your PO gives you as an acceptance test the following scenario:
 
-> Given a client makes a deposit of 1000 on 10-01-2019  
-And a deposit of 2000 on 13-01-2019  
-And a withdrawal of 500 on 14-01-2019  
+> Given a client makes a deposit of 1000 on 10-06-2019  
+And a deposit of 2000 on 13-06-2019  
+And a withdrawal of 500 on 14-06-2019  
 When she prints her bank statement  
 Then she would see  
 date       || credit   || debit    || balance  
-14/01/2012 ||          || 500.00   || 2500.00  
-13/01/2012 || 2000.00  ||          || 3000.00  
-10/01/2012 || 1000.00  ||          || 1000.00
+14/06/2019 ||          || 500.00   || 2500.00  
+13/06/2019 || 2000.00  ||          || 3000.00  
+10/06/2019 || 1000.00  ||          || 1000.00
 
 Implement this product, guided by tests.

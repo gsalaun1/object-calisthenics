@@ -67,10 +67,9 @@
         </dependency>
         <dependency>
             <groupId>com.willowtreeapps.assertk</groupId>
-            <artifactId>assertk</artifactId>
+            <artifactId>assertk-jvm</artifactId>
             <version>${assertk.version}</version>
         </dependency>
-
     </dependencies>
 
     <build>

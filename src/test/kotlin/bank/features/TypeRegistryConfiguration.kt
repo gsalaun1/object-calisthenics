@@ -13,7 +13,7 @@ import java.util.*
 class TypeRegistryConfiguration : TypeRegistryConfigurer {
 
     override fun locale(): Locale {
-        return Locale("en")
+        return Locale.ENGLISH
     }
 
     override fun configureTypeRegistry(typeRegistry: TypeRegistry) {

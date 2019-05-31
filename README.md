@@ -62,17 +62,17 @@ Law Of Demeter (“Only talk to your friends”)
 
 > Abbreviations can be confusing, and they tend to hide larger problems.  
 &#32;  
-Why Do You Want To Abbreviate ? (...)  
+Why Do You Want To Abbreviate ?  
 &#32;  
-You write the same name over and over again ? => Code Duplication (...)  
+You write the same name over and over again ? => Code Duplication  
 &#32;  
 Method name is too long ? Maybe your class has multiple responsibilities
 
 ### 7. <a id="rule_7">Keep all entities small (50 lines)</a>
 
-> No class over 50 lines and no package over 10 files. (...)  
+> No class over 50 lines and no package over 10 files.  
 &#32;  
-Long files are harder to read, harder to understand, and harder to maintain. (...)  
+Long files are harder to read, harder to understand, and harder to maintain.  
 &#32;  
 Packages, like classes, should be cohesive and have a purpose. Keeping those packages small forces them to have a real identity.
 

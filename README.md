@@ -108,31 +108,10 @@ And a withdrawal of 500 on 14-06-2019
 When she prints her bank statement  
 Then she would see  
 
-<table class="mytable">
-    <tr>
-        <td style="border: 0;border-right:1px solid;margin-right:2px">date</td>        
-        <td style="border: 0;border-left:1px solid;border-right:1px solid;margin-right:2px">credit</td>
-        <td style="border: 0;border-left:1px solid;border-right:1px solid;margin-right:2px">debit</td>
-        <td style="border: 0;border-left:1px solid;">balance</td>
-    </tr>
-    <tr>
-        <td style="border: 0;border-right:1px solid;margin-right:2px">14/06/2019</td>
-        <td style="border: 0;border-left:1px solid;border-right:1px solid;margin-right:2px"></td>
-        <td style="border: 0;border-left:1px solid;border-right:1px solid;margin-right:2px">500.00</td>
-        <td style="border: 0;border-left:1px solid;">2500.00</td>
-    </tr>
-    <tr>
-        <td style="border: 0;border-right:1px solid;margin-right:2px">13/06/2019</td>
-        <td style="border: 0;border-left:1px solid;border-right:1px solid;margin-right:2px"></td>
-        <td style="border: 0;border-left:1px solid;border-right:1px solid;margin-right:2px">2000.00</td>
-        <td style="border: 0;border-left:1px solid;">3000.00</td>
-    </tr>
-    <tr>
-        <td style="border: 0;border-right:1px solid;margin-right:2px">10/06/2019</td>
-        <td style="border: 0;border-left:1px solid;border-right:1px solid;margin-right:2px"></td>
-        <td style="border: 0;border-left:1px solid;border-right:1px solid;margin-right:2px">1000.00</td>
-        <td style="border: 0;border-left:1px solid;">1000.00</td>
-    </tr>
-</table>
+| date       | credit  | debit  | balance |
+|------------|---------|--------|---------|
+| 14/06/2019 |         | 500.00 | 2500.00 |
+| 13/06/2019 | 2000.00 |        | 3000.00 |
+| 10/06/2019 | 1000.00 |        | 1000.00 |
 
 Implement this product, guided by tests.

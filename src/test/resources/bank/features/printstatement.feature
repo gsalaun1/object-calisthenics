@@ -1,6 +1,6 @@
 Feature: Print Statement
 
-  Scenario:
+  Scenario: A few transactions
     Given a client makes a deposit of 1000 on 10-06-2019
     And a deposit of 2000 on 13-06-2019
     And a withdrawal of 500 on 14-06-2019

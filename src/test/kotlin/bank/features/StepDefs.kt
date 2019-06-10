@@ -5,6 +5,7 @@ import bank.domain.Amount
 import bank.domain.TransactionRegistry
 import cucumber.api.PendingException
 import cucumber.api.java8.En
+import java.io.PrintStream
 import java.time.LocalDate
 
 /**
@@ -39,7 +40,9 @@ class StepDefs : En {
         ) { amount: Amount, date: LocalDate -> run {
             account.withdraw(amount,date)
         } }
-        When("she prints her bank statement") { throw PendingException() }
+        When("she prints her bank statement") {
+            account.printStatement(System.out)
+        }
         Then("she would see") { arg0: String -> throw PendingException() }
     }
 }

@@ -1,5 +1,6 @@
 package bank.domain
 
+import java.io.PrintStream
 import java.time.LocalDate
 
 /**
@@ -13,5 +14,9 @@ class Account(private val transactionRegistry: TransactionRegistry) {
 
     fun withdraw(amount: Amount, date: LocalDate) {
         transactionRegistry.recordTransaction(Transaction(amount.reverse(), date))
+    }
+
+    fun printStatement(output: PrintStream) {
+        transactionRegistry.printStatement(output)
     }
 }

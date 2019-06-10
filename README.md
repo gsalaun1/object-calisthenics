@@ -115,3 +115,19 @@ Then she would see
 | 10/06/2019 | 1000.00 |        | 1000.00 |
 
 Implement this product, guided by tests.
+
+### Hints :
+
+* [MockK documentation](https://github.com/mockk/mockk)
+
+* Currency formatting :
+
+        val symbols = DecimalFormatSymbols(Locale.FRENCH)  
+        symbols.decimalSeparator = '.'
+        val decimalFormat = DecimalFormat("###.00", symbols)    
+        decimalFormat.format(value)
+        
+* Date formatting :
+
+        val formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
+        formatter.format(date)

@@ -84,7 +84,7 @@ Leads to very quick decomposition of complex large objects into much simpler mod
 &#32;  
 Two kinds of classes, those that maintain the state of a single instance variable, and those that coordinate two separate variables.
 
-### 9. <a id="rule_1">No getters/setters/properties</a>
+### 9. <a id="rule_9">No getters/setters/properties</a>
 
 > Enrich the entity with more valuable and meaningful logic and methods <> anemic domain model/data object  
 &#32;  

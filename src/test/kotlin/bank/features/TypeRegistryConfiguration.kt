@@ -1,5 +1,6 @@
 package bank.features
 
+import bank.domain.Amount
 import cucumber.api.TypeRegistry
 import cucumber.api.TypeRegistryConfigurer
 import io.cucumber.cucumberexpressions.ParameterType
@@ -24,6 +25,13 @@ class TypeRegistryConfiguration : TypeRegistryConfigurer {
         ) { s:String ->
             val formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy")
             LocalDate.parse(s, formatter)
+        })
+        typeRegistry.defineParameterType(ParameterType(
+                "amount",
+                "[0-9]{4}",
+                Amount::class.java
+        ) { s:String ->
+            Amount(s.toInt())
         })
     }
 }

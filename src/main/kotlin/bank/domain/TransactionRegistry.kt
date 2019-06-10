@@ -4,9 +4,8 @@ package bank.domain
  * <p>TransactionRegistry</p>
  */
 data class TransactionRegistry(private val transactions: MutableSet<Transaction> = sortedSetOf()) {
-    fun recordDeposit(transaction: Transaction) {
-        transactions.add(transaction)
-    }
+
+    fun recordTransaction(transaction: Transaction) = transactions.add(transaction)
 
     fun size() = transactions.size
 

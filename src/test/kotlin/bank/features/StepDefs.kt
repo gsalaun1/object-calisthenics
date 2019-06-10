@@ -35,8 +35,10 @@ class StepDefs : En {
                 account.deposit(amount, date)
             }
         }
-        And("a withdrawal of {int} on {localdate}"
-        ) { arg0: Int, arg1: LocalDate -> throw PendingException() }
+        And("a withdrawal of {amount} on {localdate}"
+        ) { amount: Amount, date: LocalDate -> run {
+            account.withdraw(amount,date)
+        } }
         When("she prints her bank statement") { throw PendingException() }
         Then("she would see") { arg0: String -> throw PendingException() }
     }

@@ -28,7 +28,7 @@ class TypeRegistryConfiguration : TypeRegistryConfigurer {
         })
         typeRegistry.defineParameterType(ParameterType(
                 "amount",
-                "[0-9]{4}",
+                "[0-9]{3,4}",
                 Amount::class.java
         ) { s:String ->
             Amount(s.toInt())

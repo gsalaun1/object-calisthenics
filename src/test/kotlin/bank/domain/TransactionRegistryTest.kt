@@ -1,6 +1,5 @@
 package bank.domain
 
-import assertk.all
 import assertk.assertAll
 import assertk.assertThat
 import assertk.assertions.isEqualTo
@@ -15,15 +14,13 @@ import java.time.LocalDate
 class TransactionRegistryTest {
 
     @Test
-    fun should_record_deposit() {
+    fun should_record_transaction() {
         val transaction = Transaction(Amount(500),LocalDate.now())
         val transactionRegistry = TransactionRegistry()
-        transactionRegistry.recordDeposit(transaction)
+        transactionRegistry.recordTransaction(transaction)
         assertAll {
             assertThat(transactionRegistry.size()).isEqualTo(1)
             assertThat(transactionRegistry.contains(transaction)).isTrue()
         }
-
-
     }
 }

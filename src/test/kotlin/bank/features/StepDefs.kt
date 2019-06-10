@@ -12,15 +12,29 @@ import java.time.LocalDate
  * StepDefs
  */
 class StepDefs : En {
+
+    lateinit var account: Account
+
+    val transactionRegistry = TransactionRegistry()
+
     init {
+        Before { _ ->
+            run {
+                account = Account(transactionRegistry)
+            }
+        }
         Given("a client makes a deposit of {amount} on {localdate}"
-        ) { amount: Amount, date: LocalDate -> run {
-            val transactionRegistry = TransactionRegistry()
-            val account = Account(transactionRegistry)
-            account.deposit(amount, date)
-        } }
-        And("a deposit of {int} on {localdate}"
-        ) { arg0: Int, arg1: LocalDate -> throw PendingException() }
+        ) { amount: Amount, date: LocalDate ->
+            run {
+                account.deposit(amount, date)
+            }
+        }
+        And("a deposit of {amount} on {localdate}"
+        ) { amount: Amount, date: LocalDate ->
+            run {
+                account.deposit(amount, date)
+            }
+        }
         And("a withdrawal of {int} on {localdate}"
         ) { arg0: Int, arg1: LocalDate -> throw PendingException() }
         When("she prints her bank statement") { throw PendingException() }
